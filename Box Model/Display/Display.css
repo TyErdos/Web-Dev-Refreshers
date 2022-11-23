@@ -1,0 +1,25 @@
+h1 {
+    background-color: palegoldenrod;
+    border: 1px solid black;    
+    width: 300px; 
+    padding: 50px;
+    margin: 50px;
+    display: none;
+}
+
+span{
+    background-color: palevioletred;
+    border: 1px solid black;
+    width: 500px; /* width and height not respected with inline elements eg: spans */
+    padding: 50px;
+    margin: 50px; /* margin only respected horizontally (the portion in the line) but not vertically */
+}
+
+div {
+    background-color: olivedrab;
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    display: inline-block; /* acts like inline, but width, height, margin all work */
+    margin: 40px;
+}
