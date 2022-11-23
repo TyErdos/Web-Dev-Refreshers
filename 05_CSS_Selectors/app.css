@@ -1,0 +1,127 @@
+/**{
+    background-color:pink
+}*/
+
+body{
+    background-color: #e9edc9;
+}
+
+button{
+    font-size: 30px;
+    background-color: #faedcd;
+    
+}
+
+h1, h2{
+    color: #d4a373;
+}
+
+/* # is for the ID selector */
+#signup{
+    background-color: #fefae0;
+    color: #d4a373;
+}
+
+span {
+    color: #7f5539;
+}
+
+
+/* class selector is . */
+.tag{
+    background-color: #f08080;
+    color: black;
+    font-size: 16px;
+
+}
+
+/* Every anchor tag within a .post class */
+.post a {
+    color: #7f5539;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Every anchor tag within a footer  */
+footer a {
+    color: #f08080;
+}
+
+h2 + button {
+    background-color: pink;
+    font-size: 20px;
+}
+
+footer > a {
+    color: #432818;
+}
+
+/* do not put a space after input or it won't work */
+input[type="password"]  {
+    color: blueviolet;
+}
+
+section[class="post"]{
+   /* leaving this intentionally blank */
+}
+/*better way is to write
+section.post {
+
+}
+*/
+
+/* kinda jank but it works, most ppl just = instead of *= */
+a[href*="google"]{
+    color: magenta;
+}
+
+/* PSEUDO CLASSES (Always starts with :)*/
+
+
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* active is when something is being activated eg: button or link while being clicked */
+.post button:active{
+    background-color: #461220;
+}
+
+/* changes color of every other post */
+.post:nth-of-type(2n) {
+    background-color: #84a98c;
+}
+
+/* PSEUDO ELEMENTS (Always starts with :: even tho most browsers dont care)*/
+
+.post h2::first-letter{
+ font-size: 50px;
+}
+
+p::first-line{
+    color:purple;
+}
+
+p::selection{
+    background-color: #ff5d8f;
+}
+
+/*CSS SPECIFICITY */
+
+/*whichever is more specific wins out 
+
+    ID > CLASS > ELEMENT
+
+*/
+
+.post button:hover {
+    background-color: #6f1d1b;
+    color: white;
+}
+button:hover{
+    background-color: olive;
+
+}
+
+/* avoid inline styles and using !important, [sammoud hates important >:( ]*/
