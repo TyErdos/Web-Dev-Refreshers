@@ -1,0 +1,22 @@
+h2
+    {
+        color: #5FCFFC;
+        background-color: rgb(89,151,0);
+    }
+ 
+h4 
+{    
+    color:magenta;
+    background-color: cyan;
+}    
+
+p 
+{
+    color:olive;
+    background: orange;
+}
+
+body {
+ background-color: #80139e;
+}
+
