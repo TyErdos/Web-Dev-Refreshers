@@ -1,0 +1,71 @@
+html {
+    font-size: 20px;
+}
+
+#percentages {
+    background-color: #c7f9cc;
+    width: 400px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #fefae0;
+    width: 70%; /* 50% of the parent element, in this case, the section */
+    height: 20%;
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    line-height: 200%; /* 200% of its own font size, so 200% of 40px */
+}
+
+#ems h2 {
+    font-size: 2.5em; /* twice the size of the parents font size, which is 2*20 since article is the parent element */
+    margin-left: 1em; /* margin takes the element itself, not the parent, so this margin is 40 */
+}
+
+#ems h3{
+    font-size: 1.5em;
+}
+
+#ems p {
+    font-size: 1.5em;
+}
+
+#ems {
+
+    font-size: 15px;
+}
+
+button {
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: #e76f51;
+    color: white;
+}
+
+ul {
+    font-size: 1.5em;
+}
+
+
+
+/* <html lang="en"> in the html document is the root element */
+
+#rems h2{
+    font-size: 3rem;
+}
+
+#rems h3{
+    font-size: 2rem;
+}
+
+#rems ul {
+    font-size: 0.95rem;
+}
+
+#rems button{
+    font-size: 1.5rem;
+}
