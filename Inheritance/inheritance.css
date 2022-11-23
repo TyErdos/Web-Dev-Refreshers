@@ -1,0 +1,17 @@
+body {
+    color: purple;
+    /*elements within the body will inherit this color if we haven't explicitly set a color on them */
+}
+
+
+section {
+    color: aqua;
+}
+
+form {
+    color: greenyellow;
+}
+
+button, input {
+    color: inherit;
+}
