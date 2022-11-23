@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        
+        <p>
+        <label for="Username">Enter a username: </label>
+        <input id="Username" type="text" placeholder="Username" name="username">
+        </p>
+        
+        <p>
+        <label for="Password">Enter a password: </label>
+        <input id="Password" type="password" placeholder="Password" name="password">
+        </p>
+        <button>Submit</button>
+        <p>
+        <label for="color">Choose a color: </label>
+        <input id="color" type="color" name="color">
+        </p>
+
+        <p>
+        <label for="number">Enter a number: </label>
+        <input id="number" type="number" placeholder="Enter a number" name="number" min="1" max="10" step="2">
+        </p>
+
+         <button>Submit</button>
+        <input type="submit" value="Click me!">
+    </form>
+
+    <!-- Showcasing how you can hijack other website searches -->
+    <br>
+    <h2>I just took your search engine!</h2>
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q">
+        <button>Search Reddit</button>
+    </form>
+    <br>
+
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <br>
+
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Search YouTube</button>
+    </form>
+
+    <h2>More Inputs!</h2>
+    <form action="/birds">
+    <input type="checkbox" name="agree_tos" id="agree">
+    <label for="agree">I agree to everything</label>
+    <p>
+        <!--  value is sent to the server, eg: "size=m" -->
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="m">M:</label>
+        <input type="radio" name="size" id="m" value="m">
+    </p>
+    <p>
+        <label for="meal">Please Select A Meal Type</label>
+        <select name="meal" id="meal">
+            <option value="choose" selected>Please Choose A Meal Type</option>
+            <option value="fish">Fish</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="beef">Beef</option>
+            <option value="chicken">Chicken</option>
+        </select>
+
+    </p>
+
+    <p>
+        <!-- min and max are self explanatory, step is the amount it will go up by, eg: this will increase cheese amount by 2 each time -->
+        <label for="cheese">Amount of Cheese Desired:</label>
+        <input type="range" name="cheeselevel" id="cheese" min="0" max="10" step="2" value="8">
+        
+    </p>
+
+    <label for="requests">Special Requests:</label>
+    <br>
+    <textarea name="requests" id="requests" cols="40" rows="10"></textarea>
+
+    <br>
+    <button>Submit</button>
+    </form>
+
+    
+    <h2>Validations Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+            <input type="text" name="first" id="first" required>
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" minlength="5" maxlength="20" required>
+                </p>
+
+                <p>
+                    <input type="email" name="email" id="email" required>
+                </p>
+
+        <button>Submit</button>
+    </form>
+    
+
+</body>
+</html>
