@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <!-- Total of bootstrap grid is always 12 units, also grid must be in a container -->
+        <div class="row">
+            <div class="col-6 bg-success">
+                I am 6 units
+            </div>
+            <div class="col-6 bg-danger">
+                I am 6 more units, so 12!
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-2 bg-danger">
+                I am 2 units
+            </div>
+            <div class="col-8 bg-info">
+                I am 8 more units, so 10! There is white space to my right!
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-3 bg-warning">
+                I am 3 units
+            </div>
+            <div class="col-6 bg-info">
+                I am 6 more units
+            </div>
+            <div class="col-3 bg-success">
+                I am 3 more units
+            </div>
+        </div>
+
+        
+        <br>
+
+        <div class="row">
+            <div class="col bg-warning">
+                We are all just class of col, which automatically divides space between us!
+            </div>
+            <div class="col bg-info">
+                We are all just class of col, which automatically divides space between us!
+            </div>
+            <div class="col bg-warning">
+                We are all just class of col, which automatically divides space between us!
+            </div>
+            <div class="col bg-danger">
+                We are all just class of col, which automatically divides space between us!
+            </div>
+            <div class="col bg-warning">
+                We are all just class of col, which automatically divides space between us!
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col bg-success">
+                We are all just class of col except danger, which automatically divides space between us!
+            </div>
+            <div class="col bg-info">
+                We are all just class of col except danger, which automatically divides space between us!
+            </div>
+            <div class="col bg-warning">
+                We are all just class of col except danger, which automatically divides space between us!
+            </div>
+            <div class="col-6 bg-danger">
+                I am col of 6, the rest of these guys have to find space to accomodate me!
+            </div>
+            <div class="col bg-warning">
+                We are all just class of col except danger, which automatically divides space between us!
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <h2 class="display-4">Responsive Grid</h2>
+        <div class="row">
+            <!-- can add in different breakpoints, so 6 when at medium breakpoint, and 3 once at the xl breakpoint -->
+            <div class="col-md-6 col-xl-3 bg-info"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+
+            <div class="col-md-6 col-xl-3 bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+        </div>
+
+        <h2 class="display-4">Grid Alignment</h2>
+        <br>
+        <div class="row align-items-center">
+            <!-- can add in different breakpoints, so 6 when at medium breakpoint, and 3 once at the xl breakpoint -->
+            <div class="col-md-6 col-xl-3 bg-danger"> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+
+            <div class="col-md-6 col-xl-3 bg-secondary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+            <div class="col-md-6 col-xl-3 bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio laborum voluptatem molestias illo! Molestias, perspiciatis expedita deleniti pariatur qui vero sed iure suscipit quidem? Veniam consequatur doloremque commodi aliquid labore?
+                Corrupti facere labore, nisi doloremque explicabo est vero quod reiciendis recusandae hic ullam eum provident culpa quisquam officiis nemo aliquam? Magnam cumque, porro mollitia omnis dolores blanditiis voluptate vitae earum.
+            </div>
+
+            <div class="col-md-6 col-xl-3 bg-warning align-self-start">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem non voluptates veniam error quasi?
+                 Quod saepe accusamus eos neque nesciunt cumque facere! Sequi ullam possimus culpa doloribus eveniet nostrum assumenda.
+            </div>
+        </div>
+
+
+
+        <h3 class="display-4">Justify Content</h3>
+        <div class="row border justify-content-center justify-content-lg-start justify-content-xl-between">
+            <div class="col-md-4 bg-primary">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Id ipsam dolorum nobis repudiandae accusantium hic accusamus mollitia corporis provident ex, necessitatibus quos dolor perferendis sint cumque temporibus culpa nam quam!
+            </div>
+            <div class="col-4 bg-info">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quis molestiae deserunt a magni veritatis hic minus! Ab, odit dicta rem optio sequi facere reprehenderit consequatur aspernatur consectetur maiores blanditiis harum?
+            </div>
+        </div>
+
+
+        <!-- gx-0 is setting the horizontal gutter to 0, so no space between the images on the left and right -->
+        <div class="row gx-2">
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1669187737670-921c6137a033?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" alt="3dguy">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1668614831744-8f97f003a3e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80" alt="rubixcube">
+            </div>
+            <div class="col-xl-4 col-md-6">
+                <img class="img-fluid" src="https://images.unsplash.com/photo-1668090956076-b2c9d6193e6b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" alt="3dstatue">
+            </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+    </script>
+    
+   
+</body>
+
+</html>
